@@ -301,7 +301,7 @@ static void gfx_generate_cc(struct ColorCombiner *comb, uint32_t cc_id) {
     }
     comb->cc_id = cc_id;
     comb->prg = gfx_lookup_or_create_shader_program(shader_id);
-    comb->tex_decal = (shader_id == 0x01045A00 || shader_id == 0x01200A00 || shader_id == 0x0000038D); // HACK: use flags for this
+    comb->tex_decal = (shader_id == 0x01045A00 || shader_id == 0x01200A00 || shader_id == 0x0000038D || shader_id == 0x0120038D); // HACK: use flags for this
     memcpy(comb->shader_input_mapping, shader_input_mapping, sizeof(shader_input_mapping));
 }
 
