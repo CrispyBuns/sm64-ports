@@ -35,6 +35,7 @@ You can follow the installation instructions in the [ps2dev repo](https://github
 wget https://github.com/ps2dev/ps2dev/releases/download/latest/ps2dev-ubuntu-latest.tar.gz
 tar xvzf ps2dev-ubuntu-latest.tar.gz
 export PATH="$(pwd)/ps2dev/ee/bin:$(pwd)/ps2dev/iop/bin:$(pwd)/sm64-port/tools:${PATH}"
+export PS2DEV=$(pwd)/ps2dev
 export PS2SDK=$(pwd)/ps2dev/ps2sdk
 ```
 2. Check out repo, submodules, etc:

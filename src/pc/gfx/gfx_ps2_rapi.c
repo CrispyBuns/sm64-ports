@@ -174,7 +174,7 @@ static struct ShaderProgram *gfx_ps2_create_and_load_new_shader(uint32_t shader_
     prg->use_fog = ccf.opt_fog;
     prg->alpha_test = ccf.opt_texture_edge;
 
-    if (shader_id == 0x01045A00 || shader_id == 0x01200A00 || shader_id == 0x0000038D)
+    if (shader_id == 0x01045A00 || shader_id == 0x01200A00 || shader_id == 0x0000038D || shader_id == 0x0120038D)
         prg->tex_mode = TEXMODE_DECAL;
     else if (shader_id == 0x01A00045)
         prg->tex_mode = TEXMODE_REPLACE;
