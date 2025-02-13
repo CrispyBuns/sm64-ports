@@ -16,6 +16,7 @@ RUN wget https://github.com/ps2dev/ps2dev/releases/download/latest/ps2dev-ubuntu
 RUN mkdir /sm64
 WORKDIR /sm64
 ENV PATH="/ps2dev/ee/bin:/ps2dev/iop/bin:/sm64/tools:${PATH}"
+ENV PS2DEV=/ps2dev
 ENV PS2SDK=/ps2dev/ps2sdk
 ENV GSKIT=/ps2dev/gsKit
 
